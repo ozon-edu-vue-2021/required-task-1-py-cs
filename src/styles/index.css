@@ -26,6 +26,11 @@ button {
     color: #fff;
     cursor: pointer;
     transition: 0.2s background-color;
+    background-color: #66BB6A;
+}
+
+button:hover {
+    background-color: #4CAF50;
 }
 
 button:disabled {
@@ -50,16 +55,11 @@ main {
 }
 
 /* Action style */
-.action {
-    background-color: #66BB6A;
+.action.fetch {
     font-size: 16px;
     padding: 10px 20px;
     border-radius: 6px;
-    margin: 10px 0;
-}
-
-.action:hover {
-    background-color: #4CAF50;
+    margin: 10px auto;
 }
 
 /* Images style */
@@ -131,9 +131,10 @@ figcaption {
 
 .popup.open {
     visibility: visible;
+    z-index: 1;
 }
 
-.action {
+.action.close {
     position: absolute;
     top: 50px;
     right: 50px;
